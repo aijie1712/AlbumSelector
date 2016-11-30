@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#104E89</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorAccentDark">#7851A9</color>
+    <color name="colorControlNormal">#FF78909C</color>
+    <color name="colorControlActivated">#009688</color>
+    <color name="colorSwitchThumbNormal">#FF78909C</color>
+
+    <color name="white">#ffffff</color>
+    <color name="background">#EAEAEA</color>
+    <color name="black">#000000</color>
+    <color name="light_purple">#CAA8FF</color>
+    <color name="blue">#418EFA</color>
+    <color name="gray">#EDEDED</color>
+    <color name="dark_gray">#919191</color>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="bg">#FEFAFC</color>
+    <color name="reader_menu_bg_color">#FEFAFC</color>
+    <!--主页tab颜色-->
+    <color name="home_tab_selected_color">#003567</color>
+    <color name="home_tab_color">#9E9E9E</color>
+
+    <color name="transparent">#00000000</color>
+    <!-- toolbar -->
+    <color name="toolbar_text_color">#FFFFFF</color>
+</resources>

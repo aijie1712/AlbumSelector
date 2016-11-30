@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.logistics.wuliuapp.ui.SignInActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdf_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="@color/background"
+        fresco:roundingBorderWidth="3dp" />
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_below="@id/sdf_photo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

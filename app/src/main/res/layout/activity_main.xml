@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.logistics.wuliuapp.MainActivity">
+
+    <include layout="@layout/view_tool_bar_back" />
+
+    <com.logistics.wuliuapp.widget.ScrollControlViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/actionbar_layout_tmp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.logistics.wuliuapp.widget.tabview.TabItem
+                android:id="@+id/actionbar_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="0"
+                app:icon_normal="@drawable/icon_tab_info"
+                app:icon_selected="@drawable/icon_tab_info_selected"
+                app:text_content="@string/tab_title_info"
+                app:text_normal_color="@color/home_tab_color"
+                app:text_select_color="@color/home_tab_selected_color"
+                app:text_size="10sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.logistics.wuliuapp.widget.tabview.TabItem
+                android:id="@+id/actionbar_publish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="1"
+                app:icon_normal="@drawable/icon_tab_publish"
+                app:icon_selected="@drawable/icon_tab_publish_selected"
+                app:text_content="@string/tab_title_publish"
+                app:text_normal_color="@color/home_tab_color"
+                app:text_select_color="@color/home_tab_selected_color"
+                app:text_size="10sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.logistics.wuliuapp.widget.tabview.TabItem
+                android:id="@+id/actionbar_attention"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="2"
+                app:icon_normal="@drawable/icon_tab_mine"
+                app:icon_selected="@drawable/icon_tab_mine_selected"
+                app:text_content="@string/tab_title_attention"
+                app:text_normal_color="@color/home_tab_color"
+                app:text_select_color="@color/home_tab_selected_color"
+                app:text_size="10sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.logistics.wuliuapp.widget.tabview.TabItem
+                android:id="@+id/actionbar_mine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="3"
+                app:icon_normal="@drawable/icon_tab_mine"
+                app:icon_selected="@drawable/icon_tab_mine_selected"
+                app:text_content="@string/tab_title_mine"
+                app:text_normal_color="@color/home_tab_color"
+                app:text_select_color="@color/home_tab_selected_color"
+                app:text_size="10sp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
